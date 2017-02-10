@@ -1,5 +1,11 @@
 {
     "name": "kayneth/userbundle",
-    "license": "proprietary",
-    "type": "project",
+    "description": "A user symfony bundle",
+    "authors": [
+        {
+            "name": "Kayneth",
+            "email": "dylan.temboucti@gmail.com"
+        }
+    ],
+    "require": {}
 }
