@@ -8,5 +8,5 @@
         }
     ],
     "require": {},
-    "target-dir" : "Kayneth/UserBundle",
+    "target-dir" : "Kayneth/UserBundle"
 }
