@@ -7,5 +7,6 @@
             "email": "dylan.temboucti@gmail.com"
         }
     ],
-    "require": {}
+    "require": {},
+    "target-dir" : "Kayneth/UserBundle",
 }
