@@ -1,0 +1,7 @@
+dt_user_security:
+    resource: "@DTUserBundle/Resources/config/routing/security.yml"
+    prefix:   /
+
+dt_user_registration:
+    resource: "@DTUserBundle/Resources/config/routing/registration.yml"
+    prefix:   /

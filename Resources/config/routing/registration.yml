@@ -1,0 +1,3 @@
+dt_user_registration_register:
+    path:     /register
+    defaults: { _controller: DTUserBundle:Registration:register }

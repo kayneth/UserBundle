@@ -1,0 +1,20 @@
+services:
+#    dt_user.example:
+#        class: DT\UserBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]
+    dt_user.security_userprovider:
+        class: DT\UserBundle\Security\UserProvider
+        arguments: ["@doctrine.orm.default_entity_manager"]
+
+    dt_user.password_updater:
+        class: DT\UserBundle\Utils\PasswordUpdater
+        arguments: ["@security.encoder_factory"]
+
+    dt_user.manager:
+        class: DT\UserBundle\Utils\UserManager
+        arguments: ["@doctrine.orm.default_entity_manager", "@dt_user.password_updater"]
+
+    dt_user.register_subscriber:
+        class: DT\UserBundle\EventSubscriber\RegistrationSubscriber
+        tags:
+            - { name: kernel.event_subscriber }
