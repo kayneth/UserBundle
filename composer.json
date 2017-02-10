@@ -1,12 +1,21 @@
 {
     "name": "kayneth/userbundle",
     "description": "A user symfony bundle",
+    "minimum-stability": "stable",
     "authors": [
         {
             "name": "Kayneth",
             "email": "dylan.temboucti@gmail.com"
         }
     ],
-    "require": {},
+    "require": {
+        "php": "^5.5.9 || ^7.0",
+        "symfony/form": "^2.7 || ^3.0",
+        "symfony/framework-bundle": "^2.7 || ^3.0",
+        "symfony/security-bundle": "^2.7 || ^3.0",
+        "symfony/twig-bundle": "^2.7 || ^3.0",
+        "twig/twig": "^1.28 || ^2.0",
+        "symfony/templating": "^2.7 || ^3.0"
+    },
     "target-dir" : "Kayneth/UserBundle"
 }
